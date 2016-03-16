@@ -15,8 +15,6 @@ import stanford.androidlib.SimpleActivity;
 
 public class PokedexActivity extends SimpleActivity {
 
-    private Drawable pokeIcon;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +29,11 @@ public class PokedexActivity extends SimpleActivity {
         ImageButton pokeImage = (ImageButton) findViewById(imageId);
 
         int pokeImageDrawable =  getResources().getIdentifier(pokeImage.getTag().toString(), "drawable", getApplicationContext().getPackageName());
+        String pokemonName = pokeImage.getTag().toString();
 
         Intent intent = new Intent(this,DetailsActivity.class);
         intent.putExtra("pokeImageDrawable",pokeImageDrawable);
+        intent.putExtra("pokemonName",pokemonName);
         startActivity(intent);
 
     }
