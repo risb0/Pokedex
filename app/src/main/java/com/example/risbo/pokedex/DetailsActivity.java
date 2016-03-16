@@ -9,11 +9,17 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
+import java.util.Scanner;
+
 import stanford.androidlib.SimpleActivity;
 
 public class DetailsActivity extends SimpleActivity {
     private int pokeIcon;
     private String pokemonName;
+    private String pokeDetailsText;
+    private Scanner scan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,5 +40,27 @@ public class DetailsActivity extends SimpleActivity {
         TextView pokeTextView = (TextView) (findViewById(R.id.pokemon_name));
         pokeTextView.setText(pokemonName.toUpperCase());
 
+        readDetails(pokemonName);
+
+        TextView pokeDetailsTextView = (TextView) findViewById(R.id.pokemon_details);
+        pokeDetailsTextView.setText(pokeDetailsText);
+        scan.close();
     }
+
+
+    public void readDetails(String pokemonName) {
+
+        int pokeFile = getResources().getIdentifier(pokemonName.toLowerCase(), "raw", getApplicationContext().getPackageName()) ;
+
+        scan = new Scanner (
+                getResources().openRawResource(pokeFile));
+        
+        while (scan.hasNextLine()){
+            pokeDetailsText  = scan.nextLine();
+
+        }
+
+
+    }
+
 }

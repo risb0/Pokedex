@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.Scanner;
+
 import stanford.androidlib.SimpleActivity;
 
 
@@ -19,6 +21,9 @@ public class PokedexActivity extends SimpleActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokedex);
+
+
+
     }
 
 
@@ -28,8 +33,10 @@ public class PokedexActivity extends SimpleActivity {
 
         ImageButton pokeImage = (ImageButton) findViewById(imageId);
 
-        int pokeImageDrawable =  getResources().getIdentifier(pokeImage.getTag().toString(), "drawable", getApplicationContext().getPackageName());
         String pokemonName = pokeImage.getTag().toString();
+
+        int pokeImageDrawable =  getResources().getIdentifier(pokeImage.getTag().toString(), "drawable", getApplicationContext().getPackageName());
+
 
         Intent intent = new Intent(this,DetailsActivity.class);
         intent.putExtra("pokeImageDrawable",pokeImageDrawable);
