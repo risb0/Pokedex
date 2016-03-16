@@ -54,7 +54,7 @@ public class DetailsActivity extends SimpleActivity {
 
         scan = new Scanner (
                 getResources().openRawResource(pokeFile));
-        
+
         while (scan.hasNextLine()){
             pokeDetailsText  = scan.nextLine();
 
