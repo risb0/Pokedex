@@ -38,31 +38,33 @@
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Bulbizarre"
+                android:tag="bulbizarre"
                 android:onClick="pokemonClick"
                 android:src="@drawable/bulbizarre"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/bulbizarre" />
 
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Herbizarre"
+                android:tag="herbizarre"
                 android:onClick="pokemonClick"
                 android:src="@drawable/herbizarre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:id="@+id/herbizarre" />
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Florizarre"
+                android:tag="florizarre"
                 android:onClick="pokemonClick"
                 android:src="@drawable/florizarre"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/florizarre" />
 
 
 
@@ -74,29 +76,32 @@
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Salameche"
+                android:tag="salameche"
                 android:onClick="pokemonClick"
                 android:src="@drawable/salameche"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/salameche" />
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Reptincel"
+                android:tag="reptincel"
                 android:onClick="pokemonClick"
                 android:src="@drawable/reptincel"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/reptincel" />
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Dracaufeu"
+                android:tag="dracaufeu"
                 android:onClick="pokemonClick"
                 android:src="@drawable/dracaufeu"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/dracaufeu" />
 
 
 
@@ -107,30 +112,33 @@
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="NidoranMale"
+                android:tag="nidoranmale"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidoranmale"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidoranmale" />
 
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Nidorino"
+                android:tag="nidorinoo"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidorinoo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidorino" />
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Nidoking"
+                android:tag="nidoking"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidoking"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidoking" />
 
         </TableRow>
 
@@ -140,30 +148,33 @@
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="NidoranFem"
+                android:tag="nidoranfem"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidoranfemale"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidoranfem" />
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Nidorina"
+                android:tag="nidorina"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidorina"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidorina" />
 
 
             <ImageButton
                 android:layout_weight="1"
                 android:scaleType="fitCenter"
-                android:tag="Nidoqueen"
+                android:tag="nidoqueen"
                 android:onClick="pokemonClick"
                 android:src="@drawable/nidoqueen"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:id="@+id/nidoqueen" />
 
         </TableRow>
 
