@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.risbo.pokedex.PokedexActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pokedex!"
+        android:textSize="40dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click a Pokemon to learn more about it"
+        />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Bulbizarre"
+        android:onClick="pokemonClick"
+        android:src="@drawable/bulbizarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Herbizarre"
+        android:onClick="pokemonClick"
+        android:src="@drawable/herbizarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Florizarre"
+        android:onClick="pokemonClick"
+        android:src="@drawable/florizarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Salameche"
+        android:onClick="pokemonClick"
+        android:src="@drawable/salameche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Reptincel"
+        android:onClick="pokemonClick"
+        android:src="@drawable/reptincel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Dracaufeu"
+        android:onClick="pokemonClick"
+        android:src="@drawable/dracaufeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="NidoranFem"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidoranfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Nidorina"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidorina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Nidoqueen"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidoqueen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="NidoranMale"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidoranmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Nidorino"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidorinoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:tag="Nidoking"
+        android:onClick="pokemonClick"
+        android:src="@drawable/nidoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
