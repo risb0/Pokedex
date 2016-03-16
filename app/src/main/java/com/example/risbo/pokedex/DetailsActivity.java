@@ -20,19 +20,13 @@ public class DetailsActivity extends SimpleActivity {
         Intent intent = getIntent();
         pokeIcon = intent.getIntExtra("pokeImageDrawable",-1);
 
-
-
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("debug", "pokeIcon = " + pokeIcon);
-
 
         ImageView pokeView = (ImageView) findViewById(R.id.pokemon_image);
-
         pokeView.setImageResource(pokeIcon);
 
     }

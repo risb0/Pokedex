@@ -26,17 +26,11 @@ public class PokedexActivity extends SimpleActivity {
 
     public void pokemonClick(View view) {
 
-
-
         int imageId = view.getId();
 
         ImageButton pokeImage = (ImageButton) findViewById(imageId);
-       // Log.d("tag",String.valueOf(imageId));
 
         int pokeImageDrawable =  getResources().getIdentifier(pokeImage.getTag().toString(), "drawable", getApplicationContext().getPackageName());
-
-        Log.d("tag", "pokeImageDrawable = "  + pokeImageDrawable);
-
 
         Intent intent = new Intent(this,DetailsActivity.class);
         intent.putExtra("pokeImageDrawable",pokeImageDrawable);
