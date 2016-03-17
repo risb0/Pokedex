@@ -7,31 +7,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:gravity="center"
     tools:context="com.example.risbo.pokedex.PokedexActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pokedex!"
-        android:textSize="40dp"
-        />
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click a Pokemon to learn more about it"
-        />
 
 
 
     <TableLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         >
         <TableRow
             android:layout_weight="1">
@@ -181,6 +166,12 @@
     </TableLayout>
 
 
-
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailsfrag"
+        android:name="com.example.risbo.pokedex.DetailsFragment"
+        tools:layout="@layout/fragment_details" />
 
 </LinearLayout>

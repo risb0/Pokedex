@@ -35,13 +35,32 @@ public class PokedexActivity extends SimpleActivity {
 
         String pokemonName = pokeImage.getTag().toString();
 
-        int pokeImageDrawable =  getResources().getIdentifier(pokeImage.getTag().toString(), "drawable", getApplicationContext().getPackageName());
+        //Stanford library methods for orientaiton
+        if(isPortrait()){
 
 
-        Intent intent = new Intent(this,DetailsActivity.class);
-        intent.putExtra("pokeImageDrawable",pokeImageDrawable);
-        intent.putExtra("pokemonName",pokemonName);
-        startActivity(intent);
+
+
+            // Stanford library method to get the id of anything: getResourceId()
+            //int pokeImagedraw = getResourceId(pokeImage.getTag().toString());
+//        int pokeImageDrawable =  getResources().getIdentifier(pokemonName.toLowerCase(), "drawable", getApplicationContext().getPackageName());
+
+
+            Intent intent = new Intent(this,DetailsActivity.class);
+//        intent.putExtra("pokeImageDrawable",pokeImageDrawable);
+            intent.putExtra("pokemonName",pokemonName);
+            startActivity(intent);
+
+
+        } else {
+            //landscape mode; update fragment
+            DetailsFragment frag = (DetailsFragment) getFragmentManager().findFragmentById(R.id.detailsfrag);
+
+            frag.setPokemonName(pokemonName);
+
+        }
+
+
 
     }
 }

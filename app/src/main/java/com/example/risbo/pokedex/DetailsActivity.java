@@ -26,7 +26,7 @@ public class DetailsActivity extends SimpleActivity {
         setContentView(R.layout.activity_details);
 
         Intent intent = getIntent();
-        pokeIcon = intent.getIntExtra("pokeImageDrawable",-1);
+//        pokeIcon = intent.getIntExtra("pokeImageDrawable",-1);
         pokemonName = intent.getStringExtra("pokemonName");
     }
 
@@ -35,6 +35,9 @@ public class DetailsActivity extends SimpleActivity {
         super.onStart();
 
         ImageView pokeImageView = (ImageView) findViewById(R.id.pokemon_image);
+        int pokeIcon = getResources().getIdentifier(pokemonName.toLowerCase(),"drawable",getPackageName());
+
+
         pokeImageView.setImageResource(pokeIcon);
 
         TextView pokeTextView = (TextView) (findViewById(R.id.pokemon_name));
@@ -50,7 +53,7 @@ public class DetailsActivity extends SimpleActivity {
 
     public void readDetails(String pokemonName) {
 
-        int pokeFile = getResources().getIdentifier(pokemonName.toLowerCase(), "raw", getApplicationContext().getPackageName()) ;
+        int pokeFile = getResources().getIdentifier(pokemonName.toLowerCase(), "raw", getPackageName()) ;
 
         scan = new Scanner (
                 getResources().openRawResource(pokeFile));
@@ -60,6 +63,7 @@ public class DetailsActivity extends SimpleActivity {
 
         }
 
+        //could use the Stanford library method : readFileText(fileID)
 
     }
 
